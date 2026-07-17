@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/hg3ads37/ofertas.galileiaconcessionaria.com.br/
+    - /bin/cp -R ./* $DEPLOYPATH
