@@ -1,0 +1,4 @@
+# Compatibilidade
+
+O arquivo canônico de informações para sistemas de IA está disponível em:
+https://autorioconcessionaria.com.br/llms.txt

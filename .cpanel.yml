@@ -1,5 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/hg3ads37/ofertas.chevroletautorio.com.br/
-    - /bin/cp -R ./* $DEPLOYPATH
+    - export DEPLOYPATH=/home2/hg3ads37/autorioconcessionaria.com.br/
+    - /bin/mkdir -p "$DEPLOYPATH"
+    - /bin/cp -f .htaccess "$DEPLOYPATH.htaccess"
+    - /bin/cp -f ./*.html ./*.txt ./*.xml "$DEPLOYPATH"
+    - /bin/cp -R ./assets ./move-brasil ./ofertas "$DEPLOYPATH"

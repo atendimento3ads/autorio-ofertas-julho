@@ -1,0 +1,34 @@
+# Chevrolet Autorio
+
+> Concessionária autorizada Chevrolet com atendimento para compra de veículos, seminovos, consórcio, venda direta para CNPJ e manutenção especializada.
+
+## Site oficial
+- Página principal: https://autorioconcessionaria.com.br/
+- Programa Move Brasil: https://autorioconcessionaria.com.br/move-brasil/
+- Política de Privacidade: https://autorioconcessionaria.com.br/politica-de-privacidade.html
+- Termos de Uso: https://autorioconcessionaria.com.br/termos-de-uso.html
+- Acessibilidade: https://autorioconcessionaria.com.br/acessibilidade.html
+
+## Principais serviços
+- Veículos Chevrolet novos
+- Seminovos com procedência garantida
+- Consórcio Chevrolet
+- Venda direta com condições para CNPJ e categorias especiais
+- Revisão e manutenção de veículos Chevrolet
+- Peças originais Chevrolet
+- Condições do Programa Move Brasil para motoristas de aplicativo, taxistas e perfis elegíveis
+
+## Contato público
+- Telefone: +55 64 2101-5100
+- Telefone: +55 64 2101-5131
+
+## Identificação
+- Razão social: AUTORIO VEICULOS E EQUIPAMENTOS LTDA
+- CNPJ: 00.062.851/0001-69
+
+As informações comerciais e condições vigentes devem ser confirmadas diretamente com a equipe da Chevrolet Autorio.
+
+## Privacidade e segurança
+- Os formulários usam um webhook autorizado do Make para encaminhar solicitações à equipe.
+- Os botões de WhatsApp apontam diretamente para o serviço oficial, sem redirecionadores intermediários.
+- Os contêineres Google Tag Manager usam consentimento negado por padrão para armazenamento opcional.

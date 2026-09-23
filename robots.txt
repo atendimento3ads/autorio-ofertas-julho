@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /obrigado.html
+Disallow: /404.html
+Disallow: /move-brasil/obrigado.html
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+
+Sitemap: https://autorioconcessionaria.com.br/sitemap.xml
