@@ -52,11 +52,12 @@
   "makesOffer": [
     {"@type":"Offer","itemOffered":{"@type":"Car","name":"Chevrolet Onix Eco Turbo AT 2026/2027","bodyType":"Hatch"},"price":"99990","priceCurrency":"BRL","priceValidUntil":"2026-09-30","availability":"https://schema.org/InStock"},
     {"@type":"Offer","itemOffered":{"@type":"Car","name":"Chevrolet Onix Activ 2027","bodyType":"Hatch"},"price":"114990","priceCurrency":"BRL","priceValidUntil":"2026-09-30","availability":"https://schema.org/InStock"},
+    {"@type":"Offer","itemOffered":{"@type":"Car","name":"Chevrolet Onix 2026/2027","bodyType":"Hatch"},"price":"89900","priceCurrency":"BRL","priceValidUntil":"2026-09-30","availability":"https://schema.org/InStock"},
     {"@type":"Offer","itemOffered":{"@type":"Car","name":"Chevrolet Onix Plus Eco Turbo AT 2027","bodyType":"Sedan"},"price":"103990","priceCurrency":"BRL","priceValidUntil":"2026-09-30","availability":"https://schema.org/InStock"},
     {"@type":"Offer","itemOffered":{"@type":"Car","name":"Chevrolet Onix Plus LTZ AT 2026","bodyType":"Sedan"},"price":"89900","priceCurrency":"BRL","priceValidUntil":"2026-09-30","availability":"https://schema.org/InStock"},
     {"@type":"Offer","itemOffered":{"@type":"Car","name":"Chevrolet Tracker AT 2027","bodyType":"SUV"},"price":"119990","priceCurrency":"BRL","priceValidUntil":"2026-09-30","availability":"https://schema.org/InStock"},
     {"@type":"Offer","itemOffered":{"@type":"Car","name":"Chevrolet Trailblazer High Country 2026","bodyType":"SUV"},"price":"389900","priceCurrency":"BRL","priceValidUntil":"2026-09-30","availability":"https://schema.org/InStock"},
-    {"@type":"Offer","itemOffered":{"@type":"Car","name":"Chevrolet Captiva EV 2026","bodyType":"SUV"},"price":"199990","priceCurrency":"BRL","priceValidUntil":"2026-09-30","availability":"https://schema.org/InStock"},
+    {"@type":"Offer","itemOffered":{"@type":"Car","name":"Chevrolet Captiva EV 2026","bodyType":"SUV"},"price":"219990","priceCurrency":"BRL","priceValidUntil":"2026-09-30","availability":"https://schema.org/InStock"},
     {"@type":"Offer","itemOffered":{"@type":"Car","name":"Chevrolet Spark Activ 2026","bodyType":"SUV"},"price":"144990","priceCurrency":"BRL","priceValidUntil":"2026-09-30","availability":"https://schema.org/InStock"},
     {"@type":"Offer","itemOffered":{"@type":"Car","name":"Chevrolet Sonic Premier 2026/2027","bodyType":"SUV"},"price":"129900","priceCurrency":"BRL","priceValidUntil":"2026-09-30","availability":"https://schema.org/InStock"}
   ]
@@ -77,6 +78,7 @@
   --primary-deeper:#121212;
   --accent:#F2BC18;
   --accent-deep:#d29625;
+  --accent-text:#8a6500;
   --btn-fill:#0077D9;
   --btn-fill-deep:#005fa8;
   --wa:#00AD57;
@@ -133,7 +135,7 @@ h2{font-size:clamp(1.4rem,4vw,2.1rem);color:var(--primary-deep);margin-bottom:14
 .btn-outline{background:transparent;color:var(--primary);border-color:var(--primary)}
 .btn-outline:hover{background:var(--primary);color:#fff}
 .btn-on-dark{color:#fff;border-color:rgba(255,255,255,.5)}
-.eyebrow-deep{color:var(--accent-deep)}
+.eyebrow-deep{color:var(--accent-text)}
 
 /* ===== Header ===== */
 .header{position:sticky;top:0;z-index:50;background:rgba(18,18,18,.92);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--border-dark)}
@@ -171,25 +173,25 @@ h2{font-size:clamp(1.4rem,4vw,2.1rem);color:var(--primary-deep);margin-bottom:14
 .car-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease,opacity .6s ease,transform .6s ease}
 .car-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md)}
 .car-thumb{position:relative;aspect-ratio:16/10;background:var(--surface-2) center/cover no-repeat;border-bottom:3px solid var(--accent)}
-.car-thumb--onix-2026{background-image:url('images-ofertas/onix-2026.jpg')}
-.car-thumb--s10-wt{background-image:url('images-ofertas/s10-wt.jpg')}
-.car-thumb--onix-eco{background-image:url('images-ofertas/onix-eco.jpg')}
-.car-thumb--onix-activ{background-image:url('images-ofertas/onix-activ.jpg')}
-.car-thumb--onix-plus-ltz{background-image:url('images-ofertas/onix-plus-ltz.jpg')}
-.car-thumb--onix-plus-premier{background-image:url('images-ofertas/onix-plus-premier.jpg')}
-.car-thumb--tracker-at{background-image:url('images-ofertas/tracker-at.jpg')}
-.car-thumb--tracker-premier{background-image:url('images-ofertas/tracker-premier.jpg')}
-.car-thumb--sonic-premier{background-image:url('images-ofertas/sonic-premier.jpg')}
-.car-thumb--trailblazer{background-image:url('images-ofertas/trailblazer.jpg')}
+.car-thumb--onix-2026{background-image:url('images-ofertas/onix-2026.jpg');background-image:image-set(url('images-ofertas/onix-2026.avif') type('image/avif'),url('images-ofertas/onix-2026.jpg') type('image/jpeg'))}
+.car-thumb--s10-wt{background-image:url('images-ofertas/s10-wt.jpg');background-image:image-set(url('images-ofertas/s10-wt.avif') type('image/avif'),url('images-ofertas/s10-wt.jpg') type('image/jpeg'))}
+.car-thumb--onix-eco{background-image:url('images-ofertas/onix-eco.jpg');background-image:image-set(url('images-ofertas/onix-eco.avif') type('image/avif'),url('images-ofertas/onix-eco.jpg') type('image/jpeg'))}
+.car-thumb--onix-activ{background-image:url('images-ofertas/onix-activ.jpg');background-image:image-set(url('images-ofertas/onix-activ.avif') type('image/avif'),url('images-ofertas/onix-activ.jpg') type('image/jpeg'))}
+.car-thumb--onix-plus-ltz{background-image:url('images-ofertas/onix-plus-ltz.jpg');background-image:image-set(url('images-ofertas/onix-plus-ltz.avif') type('image/avif'),url('images-ofertas/onix-plus-ltz.jpg') type('image/jpeg'))}
+.car-thumb--onix-plus-premier{background-image:url('images-ofertas/onix-plus-premier.jpg');background-image:image-set(url('images-ofertas/onix-plus-premier.avif') type('image/avif'),url('images-ofertas/onix-plus-premier.jpg') type('image/jpeg'))}
+.car-thumb--tracker-at{background-image:url('images-ofertas/tracker-at.jpg');background-image:image-set(url('images-ofertas/tracker-at.avif') type('image/avif'),url('images-ofertas/tracker-at.jpg') type('image/jpeg'))}
+.car-thumb--tracker-premier{background-image:url('images-ofertas/tracker-premier.jpg');background-image:image-set(url('images-ofertas/tracker-premier.avif') type('image/avif'),url('images-ofertas/tracker-premier.jpg') type('image/jpeg'))}
+.car-thumb--sonic-premier{background-image:url('images-ofertas/sonic-premier.jpg');background-image:image-set(url('images-ofertas/sonic-premier.avif') type('image/avif'),url('images-ofertas/sonic-premier.jpg') type('image/jpeg'))}
+.car-thumb--trailblazer{background-image:url('images-ofertas/trailblazer.jpg');background-image:image-set(url('images-ofertas/trailblazer.avif') type('image/avif'),url('images-ofertas/trailblazer.jpg') type('image/jpeg'))}
 .car-thumb--montana-ltz{background-image:url('images-ofertas/montana-ltz.jpg')}
-.car-thumb--montana{background-image:url('images-ofertas/montana.jpg')}
+.car-thumb--montana{background-image:url('images-ofertas/montana.jpg');background-image:image-set(url('images-ofertas/montana.avif') type('image/avif'),url('images-ofertas/montana.jpg') type('image/jpeg'))}
 .car-thumb--spin-premiere{background-image:url('images-ofertas/spin-premiere.jpg')}
-.car-thumb--spark-activ{background-image:url('images-ofertas/spark-activ.jpg')}
-.car-thumb--captiva{background-image:url('../assets/images/captiva.webp')}
+.car-thumb--spark-activ{background-image:url('images-ofertas/spark-activ.jpg');background-image:image-set(url('images-ofertas/spark-activ.avif') type('image/avif'),url('images-ofertas/spark-activ.jpg') type('image/jpeg'))}
+.car-thumb--captiva{background-image:url('../assets/images/captiva.webp');background-image:image-set(url('images-ofertas/captiva.avif') type('image/avif'),url('../assets/images/captiva.webp') type('image/webp'))}
 .car-badge{position:absolute;top:12px;left:12px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:4px;background:var(--accent);color:var(--primary-deeper)}
 .car-badge.blue{background:var(--btn-fill);color:#fff}
 .car-body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1;gap:5px}
-.car-tag{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-deep)}
+.car-tag{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-text)}
 .car-name{font-family:var(--font-base);font-weight:700;font-size:1.15rem;color:var(--primary-deep);line-height:1.1}
 .car-spec{font-size:.85rem;color:var(--t3);margin-bottom:6px}
 .car-price{margin-top:auto;padding-top:12px;border-top:1px solid var(--border)}
@@ -213,7 +215,7 @@ h2{font-size:clamp(1.4rem,4vw,2.1rem);color:var(--primary-deep);margin-bottom:14
 .footer-grid{display:grid;grid-template-columns:1fr;gap:32px}
 .footer .brand img{height:42px;width:auto;margin-bottom:18px}
 .footer p{font-size:.92rem;line-height:1.7;max-width:50ch}
-.footer h4{color:#fff;font-weight:700;font-size:1rem;margin-bottom:14px;text-transform:uppercase;letter-spacing:.08em}
+.footer h2{color:#fff;font-style:normal;font-weight:700;font-size:1rem;line-height:1.6;margin-bottom:14px;text-transform:uppercase;letter-spacing:.08em}
 .footer .legal p{font-size:.83rem;color:var(--on-dark-3);margin-bottom:12px;max-width:none}
 .footer-bottom{border-top:1px solid var(--border-dark);margin-top:36px;padding-top:20px;display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:space-between;font-size:.83rem;color:var(--on-dark-3)}
 .footer-bottom a{color:var(--accent);font-weight:600}
@@ -278,6 +280,7 @@ h2{font-size:clamp(1.4rem,4vw,2.1rem);color:var(--primary-deep);margin-bottom:14
 @media (min-width:1101px){ .grid{grid-template-columns:repeat(4,1fr)} }
 @media (min-width:1600px){ .container{max-width:1440px} .grid{grid-template-columns:repeat(5,1fr)} }
 @media (min-width:700px){.consent-panel{grid-template-columns:1fr auto;align-items:end}.consent-panel__actions{justify-content:flex-end}}
+.catalog .accent{color:var(--accent-text)}
 </style>
 </head>
 <body>
@@ -397,9 +400,9 @@ h2{font-size:clamp(1.4rem,4vw,2.1rem);color:var(--primary-deep);margin-bottom:14
           <span class="car-badge">Emplacamento grátis</span>
         </div>
         <div class="car-body">
-          <span class="car-tag">Hatch · 2027</span>
+          <span class="car-tag">Hatch · 2026/2027</span>
           <h3 class="car-name">Onix</h3>
-          <p class="car-spec">Entrada de R$ 27.900 + 72 parcelas · Frisos laterais</p>
+          <p class="car-spec">À vista R$ 89.900 ou entrada de R$ 27.900 + 72 parcelas · Emplacamento grátis + frisos laterais</p>
           <div class="car-price"><small>Parcelas mensais de</small><strong>R$ 1.499</strong></div>
           <a class="car-cta" href="https://tintim.link/whatsapp/da0e8764-2846-4dcc-a7d2-c2a6366cd91c/4d6bd350-e1dd-4b16-b183-628323c2634e" target="_blank" rel="noopener">Tenho interesse <span class="arrow" aria-hidden="true">→</span></a>
         </div>
@@ -484,7 +487,7 @@ h2{font-size:clamp(1.4rem,4vw,2.1rem);color:var(--primary-deep);margin-bottom:14
           <span class="car-tag">Elétrico · 2026</span>
           <h3 class="car-name">Captiva EV</h3>
           <p class="car-spec">R$ 15.000 de bônus na troca ou taxa 0%</p>
-          <div class="car-price"><small>Preço promocional</small><strong>R$ 199.990</strong></div>
+          <div class="car-price"><small>Preço promocional à vista</small><strong>R$ 219.990</strong></div>
           <a class="car-cta" href="https://tintim.link/whatsapp/da0e8764-2846-4dcc-a7d2-c2a6366cd91c/4d6bd350-e1dd-4b16-b183-628323c2634e" target="_blank" rel="noopener">Tenho interesse <span class="arrow" aria-hidden="true">→</span></a>
         </div>
       </article>
@@ -541,7 +544,7 @@ h2{font-size:clamp(1.4rem,4vw,2.1rem);color:var(--primary-deep);margin-bottom:14
         <p>Concessionária Chevrolet Autorio. Ofertas especiais em toda a linha de veículos 0 km, com atendimento dedicado do primeiro contato à entrega.</p>
       </div>
       <div class="legal">
-        <h4>Informações legais</h4>
+        <h2>Informações legais</h2>
         <p>Valores, modelos participantes, condições comerciais e opções de financiamento são meramente ilustrativos e podem sofrer alterações sem aviso prévio.</p>
         <p>Ofertas válidas para faturamento até 30/09/2026 ou enquanto durar o estoque, sujeitas à análise de crédito, disponibilidade de veículos e condições vigentes. Imagens meramente ilustrativas.</p>
       </div>
