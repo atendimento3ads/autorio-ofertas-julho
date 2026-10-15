@@ -5,4 +5,4 @@ deployment:
     - /bin/mkdir -p "$DEPLOYPATH"
     - /bin/cp -f .htaccess "$DEPLOYPATH.htaccess"
     - /bin/cp -f ./*.html ./*.txt ./*.xml "$DEPLOYPATH"
-    - /bin/cp -R ./assets ./move-brasil ./ofertas "$DEPLOYPATH"
+    - /bin/cp -R ./assets ./move-brasil ./ofertas ./feirao "$DEPLOYPATH"

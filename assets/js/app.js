@@ -5,7 +5,7 @@
   if (siteStylesheet) siteStylesheet.media = "all";
 
   const consentKey = "autorio_tracking_consent_v1";
-  const isNestedLandingPage = window.location.pathname.includes("/move-brasil/") || window.location.pathname.includes("/ofertas/");
+  const isNestedLandingPage = window.location.pathname.includes("/move-brasil/") || window.location.pathname.includes("/ofertas/") || window.location.pathname.includes("/feirao/");
   const legalPrefix = isNestedLandingPage ? "../" : "";
   let savedConsent = "pending";
   try { savedConsent = window.localStorage.getItem(consentKey) || "pending"; } catch {}
